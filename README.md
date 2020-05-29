@@ -1,6 +1,8 @@
 # RegCloak
 A PowerShell script that attempts to help malware analysts hide their Windows VirtualBox VM's from malware that may be trying to evade analysis. The script Rrnames several registry keys that malware typically uses for VM detection. Guaranteed to bring down your pafish ratings by at least a few points ;)
 
+Tested on Windows 7 VM - probably works on Windows 10 and XP as well.
+
 # Usage
 
 1. Simply run RegCloak.ps1 as Administrator on your Windows VirtualBox VM.
