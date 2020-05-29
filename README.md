@@ -3,7 +3,9 @@ A PowerShell script that attempts to help malware analysts hide their Windows Vi
 
 # Usage
 
-Simply run RegCloak.ps1 as Administrator on your Windows VirtualBox VM.
+1. Simply run RegCloak.ps1 as Administrator on your Windows VirtualBox VM.
+2. Start analyzing/reversing malware!
+3. When done, reset your VM to clean state.
 
 # Warnings
 
