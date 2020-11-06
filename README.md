@@ -21,21 +21,21 @@ Spot any bugs? Let me know!
 
 Usage examples:
 
-  - Make registry changes, remove VBox files, and kill VBox processes:
+Make registry changes, remove VBox files, and kill VBox processes:
   
-  "VBoxCloak.ps1 -all"
+  - "VBoxCloak.ps1 -all"
   
-  - Just make registry modificaitons:
+Just make registry modificaitons:
   
-  "VBoxCloak.ps1 -reg"
+  - "VBoxCloak.ps1 -reg"
   
-  - Just remove VBox files:
+Just remove VBox files:
   
-  "VBoxCloak.ps1 -files"
+  - "VBoxCloak.ps1 -files"
   
-  - Just kill VBox processes:
+Just kill VBox processes:
   
-  "VBoxCloak.ps1 -procs"
+  - "VBoxCloak.ps1 -procs"
 
 # Warnings & Disclaimers
 
