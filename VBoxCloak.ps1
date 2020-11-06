@@ -4,7 +4,7 @@
 ## Many thanks to pafish for some of the ideas :) https://github.com/a0rtega/pafish
 ##################################################
 ## Author: d4rksystem
-## Version: 0.3
+## Version: 0.2
 ##################################################
 ## Tips:
 ## - You will need to run this as Admin!
