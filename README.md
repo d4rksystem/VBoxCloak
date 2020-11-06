@@ -10,7 +10,6 @@ The script accomplishes this by doing the following:
 
 Tested on Windows 7 VM - probably works on Windows 10 and XP as well.
 
-
 # Warnings
 
 - Ensure to make a snapshot of your VM before running this.
@@ -18,7 +17,7 @@ Tested on Windows 7 VM - probably works on Windows 10 and XP as well.
 # Usage
 
 1. Simply run VBoxCloak.ps1 as Administrator on your Windows VirtualBox VM.
-2. Start analyzing/reversing malware! Profit.
+2. Detonate your malware. Profit.
 3. When done, reset your VM to clean state.
 
 
