@@ -3,7 +3,7 @@
 ## Written and tested on Windows 7 System, but will likely work for Windows 10 as well.
 ## Many thanks to pafish for some of the ideas :) https://github.com/a0rtega/pafish
 ##################################################
-## Author: d4rksystem
+## Author: Kyle Cucci
 ## Version: 0.2
 ##################################################
 ## Tips:
