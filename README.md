@@ -9,7 +9,7 @@ The script accomplishes this by doing the following:
 - Deletes VirtualBox driver files (this will not crash VirtualBox, since these drivers are loaded into memory anyway!).
 - Deletes or renames VirtualBox supporting files in System32 directory.
 
-Tested on Windows 7 VM - probably works on Windows 10 and XP as well.
+Tested on Windows 7 and Windows 10 - Probably works on Windows XP as well.
 
 Spot any bugs? Let me know!
 
@@ -39,8 +39,8 @@ Just kill VBox processes:
 
 # Warnings & Disclaimers
 
-- This code is in Beta. I know I cuould have coded it better, but sometimes quick and dirty is best.
+- This code is in Beta. I know I cuold have coded it better, but sometimes quick and dirty is best.
 - Use at your own risk! Use only in a VM, and NOT on your host.
-- Ensure to make a snapshot of your VM before running this.-
-- Using the "files" and/or "procs" command line arguments will likely result in slightly less VM performance. This is because this script removes several files that are required for supporting functions such as graphics, keyboard input, etc. Just revert VM to clean state if this messes anything up.
+- Ensure to make a snapshot of your VM before running this.
+- Using the "files" and/or "procs" command line arguments will likely result in lower VM performance. This is because this script removes several files that are required for supporting functions such as graphics, keyboard input, etc. Just revert VM to clean state if this messes anything up.
 
