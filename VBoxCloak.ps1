@@ -1,15 +1,10 @@
 #################################################
-## VBoxCLoak.ps1: A script that attempts to hide VirtualBox from malware by modifying registry keys, killing associated processes, and removing uneeded driver files.
+## VBoxCloak.ps1: A script that attempts to hide VirtualBox hypervisor from malware by modifying registry keys, killing associated processes, and removing uneeded driver/system files.
 ## Written and tested on Windows 7 System, but will likely work for Windows 10 as well.
-## Many thanks to pafish for some of the ideas :) https://github.com/a0rtega/pafish
+## Many thanks to pafish for some of the ideas :) - https://github.com/a0rtega/pafish
 ##################################################
 ## Author: d4rksystem
-## Version: 0.2
-##################################################
-## Tips:
-## - You will need to run this as Admin!
-## - This script is designed to be run in a VM in an ad-hoc manner, and then the VM will ideally be reset. This script will likely break your VM long-term, so ensure you have a snapshot!
-## - You may need to run this script again in the VM as needed, as Windows is pretty good at resetting some of these values after a certain amount of time.
+## Version: 0.3
 ##################################################
 
 # Define command line parameters
@@ -26,6 +21,18 @@ if ($all) {
 	$files = $true
 }
 
+# Menu / Helper stuff
+Write-Output 'VBoxCloak.ps1 by @d4rksystem (Kyle Cucci)'
+Write-Output 'Usage: VBoxCloak.ps1 -<option>'
+Write-Output 'Example Usage: VBoxCloak.ps1 -all'
+Write-Output 'Options:'
+Write-Output 'all: Enable all options.'
+Write-Output 'reg: Make registry changes.'
+Write-Output 'procs: Kill processes.'
+Write-Output 'files: Make file system changes.'
+Write-Output 'Make sure to run as Admin!'
+Write-Output '*****************************************'
+
 # Stop VBox Processes
 if ($procs) {
 
@@ -35,6 +42,7 @@ if ($procs) {
 
     if ($VBoxTray) {
         $VBoxTray | Stop-Process -Force
+        Write-Output '[*] VBoxTray process killed!'
     }
 
     if (!$VBoxTray) {
@@ -45,6 +53,7 @@ if ($procs) {
 
     if ($VBoxService) {
         $VBoxService | Stop-Process -Force
+        Write-Output '[*] VBoxService process killed!'
     }
 
     if (!$VBoxService) {
@@ -269,5 +278,5 @@ if ($files) {
     Rename-Item "C:\Program Files\Oracle\VirtualBox Guest Additions" "C:\Program Files\Oracle\detect dis"
 }
 
-Write-Output "** Done! Did you recieve a lot of errors? Try running as Admin!"
+Write-Output '** Done! Did you recieve a lot of errors? Try running as Admin!'
 
