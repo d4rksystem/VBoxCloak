@@ -1,6 +1,6 @@
 # VBoxCloak
 
-A PowerShell script that attempts to help malware analysts hide their Windows VirtualBox Windows VM's from malware that may be trying to evade analysis. Guaranteed to bring down your pafish ratings by at least a few points ;)
+A PowerShell script that attempts to help malware analysts hide their VirtualBox Windows VM's from malware that may be trying to evade analysis. Guaranteed to bring down your pafish ratings by at least a few points ;)
 
 The script accomplishes this by doing the following:
 
