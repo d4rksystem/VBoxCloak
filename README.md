@@ -9,6 +9,9 @@ The script accomplishes this by doing the following:
 - Deletes VirtualBox driver files (this will not crash VirtualBox, since these drivers are loaded into memory anyway!).
 - Deletes or renames VirtualBox supporting files in System32 directory.
 
+For more info, see my blog post here: 
+https://securityliterate.com/hiding-virtual-machines-from-malware-introducing-vmwarecloak-vboxcloak/
+
 Tested on Windows 7 and Windows 10 - Probably works on Windows XP as well.
 
 Spot any bugs? Let me know!
