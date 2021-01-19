@@ -3,8 +3,8 @@
 ## Written and tested on Windows 7 System, but will likely work for Windows 10 as well.
 ## Many thanks to pafish for some of the ideas :) - https://github.com/a0rtega/pafish
 ##################################################
-## Author: d4rksystem
-## Version: 0.4
+## Author: @d4rksystem (Kyle Cucci)
+## Version: 0.4 
 ##################################################
 
 # Define command line parameters
